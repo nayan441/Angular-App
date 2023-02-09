@@ -1,0 +1,13 @@
+<button  #minus (click)="counter('minus')" >--</button>
+<span  #number>{{  initialValue }}</span>
+<button  #plus (click)="counter('add')" >++</button>
+
+<div *ngIf="show; then ifblock  else  elseblog">hello</div>
+
+
+<ng-template   #ifblock>
+    <h1  >  ifblock </h1>
+</ng-template>
+<ng-template #elseblog>
+    <h1   > elseblog </h1>
+</ng-template>

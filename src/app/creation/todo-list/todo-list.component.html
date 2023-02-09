@@ -1,0 +1,15 @@
+<div>
+    <input type="text" name="" #add>
+    <br>
+    <br>
+    <button mat-button color="warn" (click)="getData(add.value)"> Add</button>
+</div>
+<div>
+    <ul *ngFor="let item of listItem"  >
+        <div>
+            <li>{{item.name}}    <button mat-button color="primary" (click)="getId(item.id)" >Remove</button> </li>
+           
+        </div>
+
+    </ul>
+</div>

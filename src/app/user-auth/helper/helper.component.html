@@ -1,0 +1,22 @@
+<p>helper works!</p>
+First Name<input type="text" #firstName  >
+Last Name<input type="text" #lastName  >
+<br/>
+<br/>
+<button  #button1 (click) = "getName(firstName.value, lastName.value)"> Click Me </button>
+
+
+
+<br/>
+<br/>
+
+<input type="text" placeholder="input1 keyup"  #input1  (keyup)="getEvent(input1.value)">
+<input type="text" placeholder="input2 keydown" #input2  (keydown)="getEvent(input2.value)">
+<input type="text" placeholder="input3 blur"  #input3  (blur)="getEvent(input3.value)">
+<input type="text" placeholder="input4 input" #input4  (input)="getEvent(input4.value)">
+
+<!-- <button  #button1 (click) = "getEvent(input1.value, input2.value)"> Click Me </button> -->
+
+<h1 (mouseleave)="getEvent('leave')"  (mouseover)="getEvent('over')" >mouseleave</h1>
+<!-- <h1 (mouseleave)="getEvent('leave')" >mouseleave</h1> -->
+<!-- <h1 (mouseover)="getEvent('over')" >mouseover</h1> -->
